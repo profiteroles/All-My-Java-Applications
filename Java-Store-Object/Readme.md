@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<div class="item active" style="background-image: url(https://github.com/profiteroles/AllJava/edit/main/Java-Store-Object/shot/1.png);">
+<div class="item active" style="background-image: url(shot/1.png);">
 
 </head>
 <body>
