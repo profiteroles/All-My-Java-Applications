@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<style> 
+body {
+    background-image: url("shot/1.png");
+    background-color: #000000;
+}
+</style>
 </head>
-<body {  background-image: url(/shot/1.png); }>
+<body>
 
 <h2>Storing Object with Java</h2>
 
