@@ -2,9 +2,7 @@
 <html>
 <head>
 <style>
-div {
-  background-image: url(shot/1.png);
-}
+<div class="item active" style="background-image: url(shot/1.png);">
 </style>
 </head>
 <body>
