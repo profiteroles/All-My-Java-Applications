@@ -3,7 +3,7 @@
 <head>
 <style>
 div {
-  img src="shot/1.png" alt="Screenshot">
+  background-image: url('shot/1.png');
 }
 </style>
 </head>
