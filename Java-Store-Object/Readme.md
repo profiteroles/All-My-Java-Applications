@@ -2,7 +2,7 @@
 <html>
 <head>
 
-body {  background-image: url(/path/to/image.png); }
+body {  background-image: url(/shot/1.png); }
 
 </head>
 <body>
