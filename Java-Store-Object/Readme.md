@@ -2,10 +2,8 @@
 <html>
 <head>
 
-body {  background-image: url(/shot/1.png); }
-
 </head>
-<body>
+<body {  background-image: url(/shot/1.png); }>
 
 <h2>Storing Object with Java</h2>
 
