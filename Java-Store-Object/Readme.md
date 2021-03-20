@@ -3,7 +3,7 @@
 <head>
 <style>
 div {
-  background-image: url('shot/1.png');
+  background-image: url(shot/1.png);
 }
 </style>
 </head>
