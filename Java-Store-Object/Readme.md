@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+
 <div class="item active" style="background-image: url(https://github.com/profiteroles/AllJava/edit/main/Java-Store-Object/shot/1.png);">
-</style>
+
 </head>
 <body>
 
