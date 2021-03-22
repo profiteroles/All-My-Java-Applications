@@ -7,7 +7,7 @@
 <h2>Multi Level Inheritance</h2>
 
 <div>
-This Example shows get inherits from different classes<br>
+This Example shows how to get inherits from other classes<br>
 <br>
   <br>
 </div>
