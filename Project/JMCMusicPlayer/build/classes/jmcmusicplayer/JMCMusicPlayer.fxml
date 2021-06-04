@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneRoot" prefHeight="427.0" prefWidth="701.0" style="-fx-background-color: #8694CD;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jmcmusicplayer.JMCMusicPlayerController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="703.0">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuitemNewPlaylist" mnemonicParsing="false" text="New Playlist" />
+                  <MenuItem fx:id="menuitemLoadPlaylist" mnemonicParsing="false" text="Load Playlist" />
+                  <MenuItem fx:id="menuitemSavePlaylist" mnemonicParsing="false" text="Save Playlist" />
+                  <MenuItem fx:id="menuitemSavePlaylistAs" mnemonicParsing="false" text="Save Playlist As..." />
+                  <MenuItem fx:id="menuitemClose" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuPlaylist" mnemonicParsing="false" text="Playlist">
+            <items>
+              <MenuItem fx:id="menuitemAddSong" mnemonicParsing="false" text="Add Song" />
+                  <MenuItem fx:id="menuitemRemoveSong" mnemonicParsing="false" text="Remove Song" />
+                  <MenuItem fx:id="menuitemClear" mnemonicParsing="false" text="Clear" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menuitemHowToGuide" mnemonicParsing="false" text="User Guide" />
+                  <MenuItem fx:id="menuitemAbout" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ScrollPane layoutX="362.0" layoutY="73.0" prefHeight="249.0" prefWidth="329.0" style="-fx-background-color: #454d54;">
+         <content>
+            <ListView fx:id="listPlaylist" prefHeight="206.0" prefWidth="327.0" style="-fx-background-color: white;" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="14.0" layoutY="37.0" text="Current Playlist:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCurrentPlaylist" layoutX="132.0" layoutY="37.0" prefHeight="25.0" prefWidth="224.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSort" layoutX="629.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnSort_OnClick" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #96A4B0;" text="Sort" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant elevation="130.0" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnSearch" layoutX="560.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnSearch_OnClick" style="-fx-background-color: #96A4B0;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant elevation="130.0" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="textSearch" layoutX="362.0" layoutY="34.0" prefHeight="30.0" prefWidth="190.0" promptText="Search playlist">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="360.0" layoutY="330.0" prefHeight="46.0" prefWidth="329.0" style="-fx-border-color: #454d54;">
+         <children>
+            <Button fx:id="btnPrevious" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#btnPrevious_OnClick" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #96A4B0;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPlayPause" layoutX="118.0" layoutY="8.0" mnemonicParsing="false" onAction="#btnPlayPause_OnClick" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #96A4B0;" text="Play/Pause" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant elevation="130.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnNext" layoutX="275.0" layoutY="8.0" mnemonicParsing="false" onAction="#btnNext_OnClick" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #96A4B0;" text="&gt;&gt;" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>
