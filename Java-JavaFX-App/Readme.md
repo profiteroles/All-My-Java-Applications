@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<h2>Firt Java Application</h2>
+<h2>Firt JavaFX Application</h2>
 
 <div>
 This is great way to get your hands on JavaFX.<br>
